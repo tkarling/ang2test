@@ -75,7 +75,8 @@ var MyAppComponent = (function () {
         }),
         angular2_1.View({
             directives: [router_1.RouterOutlet, router_1.RouterLink],
-            templateUrl: "templates/my-app.html"
+            templateUrl: "templates/my-app.html",
+            styleUrls: ['styles.css']
         }), 
         __metadata('design:paramtypes', [])
     ], MyAppComponent);

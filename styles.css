@@ -1,0 +1,11 @@
+.red {
+    color: red;
+}
+
+.mdl-layout__content {
+    padding: 4%;
+}
+
+.at-input-text {
+    height: 30px;
+}

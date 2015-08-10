@@ -1,7 +1,15 @@
-<nav>
-    <a router-link="home">FRIENDS</a>
-    <a router-link="todo">TODO</a>
-</nav>
-<main>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<header class="mdl-layout__header">
+    <div style="padding-left: 16px;" class="mdl-layout__header-row">
+        <span class="mdl-layout-title pm-app-title">A2 Test</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" router-link="home">FRIENDS</a>
+            <a class="mdl-navigation__link" router-link="todo">TODO</a>
+        </nav>
+    </div>
+</header>
+
+<main class="mdl-layout__content">
     <router-outlet></router-outlet>
 </main>

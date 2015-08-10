@@ -62,7 +62,8 @@ class MyFriendsComponent {
 })
 @View({
     directives: [RouterOutlet, RouterLink],
-    templateUrl:`templates/my-app.html`
+    templateUrl:`templates/my-app.html`,
+    styleUrls: ['styles.css']
 })
 class MyAppComponent{}
 

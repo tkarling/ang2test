@@ -1,7 +1,12 @@
-<p>My name: {{ name }}</p>
-<input #newfriend (keyup)="doneTyping($event)">
-<button (click)="addFriend(newfriend.value); newfriend.value = null;">add friend</button>
-<p>Friends:</p>
+<h4>My name: {{ name }}</h4>
+<div class="mdl-grid">
+    <input class="mdl-cell mdl-cell--2-col at-input-text" id="addFriend"
+           #newfriend (keyup)="doneTyping($event)" placeholder="new friend">
+    <button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            (click)="addFriend(newfriend.value); newfriend.value = null;">Add</button>
+</div>
+
+<h5>Friends:</h5>
 <ul>
     <li *ng-for="#name of names">
         {{ name }}
